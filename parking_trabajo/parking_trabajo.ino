@@ -6,3 +6,10 @@ int total_spaces = 10;
 int lastEntrada = HIGH;
 int lastSalida = HIGH;
 int gasLimit = 450;
+
+void setup() {
+  Serial.begin(9600);
+  pinMode(sensorEntrada, INPUT_PULLUP);
+  pinMode(sensorSalida, INPUT_PULLUP);
+  pinMode(sensorGas, INPUT);
+}
